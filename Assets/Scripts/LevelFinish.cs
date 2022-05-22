@@ -30,7 +30,7 @@ public class LevelFinish : MonoBehaviour
     {
         isCollided=true;
         BGMusic.Stop();
-        Debug.Log("Level Completed: ");
+        //Debug.Log("Level Completed: ");
         FinishAudio.Play();
         // _rigidbody.bodyType=RigidbodyType2D.Static;
         yield return new WaitForSeconds(1f);

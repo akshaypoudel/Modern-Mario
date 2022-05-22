@@ -42,6 +42,11 @@ public class PauseMenuScript : MonoBehaviour
         Time.timeScale=1f;
         SceneManager.LoadScene(_name);
     }
+    public void LoadScene(string n)
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(n);
+    }
     public void HomeButton()
     {
         Time.timeScale=1f;

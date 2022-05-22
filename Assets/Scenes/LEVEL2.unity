@@ -405,7 +405,9 @@ MonoBehaviour:
   isGrounded: 0
   runSpeed: 10
   jumpHeight: 25
-  _animator: {fileID: 0}
+  _rigidBody: {fileID: 1063986082}
+  _animator: {fileID: 1063986087}
+  _renderer: {fileID: 1063986084}
   JumpAudio: {fileID: 1063986091}
   CollectAudio: {fileID: 1063986092}
 --- !u!95 &1063986087
@@ -1081,9 +1083,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1553108708080977482, guid: f964e0e692f3e4742a4e31952e5961db, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -30.563171
+    - target: {fileID: 1553108707614206206, guid: f964e0e692f3e4742a4e31952e5961db, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553108708080977483, guid: f964e0e692f3e4742a4e31952e5961db, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1553108708414094692, guid: f964e0e692f3e4742a4e31952e5961db, type: 3}
       propertyPath: m_Pivot.x
@@ -1176,6 +1182,30 @@ PrefabInstance:
     - target: {fileID: 1553108708414094712, guid: f964e0e692f3e4742a4e31952e5961db, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553108708455725476, guid: f964e0e692f3e4742a4e31952e5961db, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553108708639822663, guid: f964e0e692f3e4742a4e31952e5961db, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553108709047584674, guid: f964e0e692f3e4742a4e31952e5961db, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553108709083486942, guid: f964e0e692f3e4742a4e31952e5961db, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553108709083486942, guid: f964e0e692f3e4742a4e31952e5961db, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553108709083486942, guid: f964e0e692f3e4742a4e31952e5961db, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -162.63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f964e0e692f3e4742a4e31952e5961db, type: 3}

@@ -25,10 +25,9 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
     #region ComponentReferences
-        private Rigidbody2D _rigidBody;
-        [HideInInspector]
-        public Animator _animator;
-        private SpriteRenderer _renderer;
+        [SerializeField] private Rigidbody2D _rigidBody;
+        [SerializeField]private Animator _animator;
+        [SerializeField]private SpriteRenderer _renderer;
         [SerializeField] private AudioSource JumpAudio;
         [SerializeField] private AudioSource CollectAudio;
 
@@ -38,15 +37,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        _rigidBody=GetComponent<Rigidbody2D>();
-        _animator=GetComponent<Animator>();
-        _renderer=GetComponent<SpriteRenderer>();  
         CollectAudio.playOnAwake=false;
     }
 
     private void Update()
     {
-        #if UNITY_EDITOR
+        #if UNITY_STANDALONE_WIN || UNITY_EDITOR
             MovePlayer();
         #elif UNITY_ANDROID
             MovePlayer1();
