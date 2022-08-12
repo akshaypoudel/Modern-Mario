@@ -7,6 +7,10 @@ TagManager:
   - Ground
   - Collectibles
   - Traps
+  - Strawberry
+  - Coin
+  - PlayerCollider
+  - NoPlayer
   layers:
   - Default
   - TransparentFX
